@@ -1,6 +1,6 @@
 import React      from 'react';
 import { Link }   from 'react-router';
-import constants  from './util/constants';
+import constants  from '../util/constants';
 
 export default () => {
   return(

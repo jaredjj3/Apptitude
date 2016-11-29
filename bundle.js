@@ -29122,7 +29122,7 @@
 	
 	var _reactRouter = __webpack_require__(213);
 	
-	var _constants = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./util/constants\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _constants = __webpack_require__(279);
 	
 	var _constants2 = _interopRequireDefault(_constants);
 	
@@ -29247,6 +29247,21 @@
 	      )
 	    )
 	  );
+	};
+
+/***/ },
+/* 279 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  appName: "",
+	  slogan: "",
+	  projectTime: ""
 	};
 
 /***/ }
