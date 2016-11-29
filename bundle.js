@@ -22553,7 +22553,11 @@
 	
 	var _redux = __webpack_require__(179);
 	
-	exports.default = (0, _redux.combineReducers)({});
+	var _NullReducer = __webpack_require__(280);
+	
+	exports.default = (0, _redux.combineReducers)({
+	  null: _NullReducer.NullReducer
+	});
 
 /***/ },
 /* 201 */
@@ -29224,6 +29228,25 @@
 	  projectTime: "",
 	  intro: "I’m an engineer. I thoroughly enjoy taking things apart, learning how they work, and rebuilding them to be better. In the past, I’ve done this with chemical processes. Today, I make user experiences that inspire and change peoples lives. ",
 	  projectDescription: ""
+	};
+
+/***/ },
+/* 280 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	exports.default = function (state, action) {
+	  Object.freeze(state);
+	  var nextState = Object.assign({}, state);
+	  switch (action.type) {
+	    default:
+	      return nextState;
+	  }
 	};
 
 /***/ }

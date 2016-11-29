@@ -1,3 +1,7 @@
 import { combineReducers } from 'redux';
 
-export default combineReducers({ });
+import { NullReducer } from './NullReducer';
+
+export default combineReducers({
+  null: NullReducer
+});
