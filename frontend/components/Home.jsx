@@ -5,7 +5,6 @@ import constants  from '../util/constants';
 export default () => {
   return(
     <div className="home-container">
-      <section className="cover-picture-container"></section>
       <div className="articles-container">
         <article>
           <div className="article-left">
@@ -19,7 +18,8 @@ export default () => {
             <h1>Jared Johnson</h1>
             <h2>Software and Chemical Engineer</h2>
             <p>
-              I’m an engineer. I thoroughly enjoy taking things apart, learning how they work, and rebuilding them to be better. In the past, I’ve done this with chemical processes. Today, I make user experiences that inspire and change peoples lives. <a href="http://jaredjohnson.me/">Let's connect.</a>
+              {constants.intro}
+              <a href="http://jaredjohnson.me/">Let's connect.</a>
             </p>
             </div>
         </article>
@@ -27,13 +27,10 @@ export default () => {
           <div className="article-center">
             <h1>{constants.appName}</h1>
             <h2>{constants.slogan}</h2>
-            <p>
-              <b>Project time: {constants.projectTime}</b>
-            </p>
-            <a href="http://github.com/jaredjj3/">Source Code</a>
-            <p>
-              {constants.appName} was brought to you by:
-            </p>
+            <p><b>Project time: {constants.projectTime}</b></p>
+            <a href={`http://github.com/jaredjj3/${constants.appName}`}>Source Code</a>
+            <p>{constants.projectDescription}</p>
+            <p>{constants.appName} was brought to you by:</p>
             <ul className="devicons-list">
               <li><i className="devicons devicon-react-original-wordmark colored"></i></li>
               <li><i className="devicons devicon-javascript-plain colored"></i></li>

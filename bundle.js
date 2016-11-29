@@ -28974,6 +28974,10 @@
 	
 	var _reactRouter = __webpack_require__(213);
 	
+	var _constants = __webpack_require__(279);
+	
+	var _constants2 = _interopRequireDefault(_constants);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -28988,35 +28992,12 @@
 	  function _class(props) {
 	    _classCallCheck(this, _class);
 	
-	    var _this = _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this, props));
-	
-	    _this.state = {
-	      home: _this.locationMatches('home'),
-	      upload: _this.locationMatches('upload'),
-	      profile: _this.locationMatches('profile')
-	    };
-	    return _this;
+	    return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this, props));
 	  }
 	
 	  _createClass(_class, [{
-	    key: 'componentWillReceiveProps',
-	    value: function componentWillReceiveProps(nextProps) {
-	      this.onClick();
-	    }
-	  }, {
-	    key: 'locationMatches',
-	    value: function locationMatches(location) {
-	      var re = new RegExp(location);
-	      return !!window.location.hash.match(re);
-	    }
-	  }, {
 	    key: 'render',
 	    value: function render() {
-	      var _state = this.state,
-	          home = _state.home,
-	          upload = _state.upload,
-	          profile = _state.profile;
-	
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'navigation-container' },
@@ -29026,36 +29007,18 @@
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'logo-container' },
-	            _react2.default.createElement('img', { className: 'logo', src: 'assets/logo.png', alt: 'crowded' })
+	            _react2.default.createElement('img', { className: 'logo', src: 'assets/logo.png', alt: _constants2.default.companyName })
 	          ),
 	          _react2.default.createElement(
 	            'ul',
 	            { onClick: this.onClick.bind(this), className: 'navigation-links' },
 	            _react2.default.createElement(
 	              'li',
-	              { className: home ? "navigation-selected" : "" },
+	              { className: 'home' },
 	              _react2.default.createElement(
 	                _reactRouter.Link,
 	                { to: 'home' },
 	                'home'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              { className: upload ? "navigation-selected" : "" },
-	              _react2.default.createElement(
-	                _reactRouter.Link,
-	                { to: 'upload' },
-	                'upload'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              { className: profile ? "navigation-selected" : "" },
-	              _react2.default.createElement(
-	                _reactRouter.Link,
-	                { to: 'profile' },
-	                'profile'
 	              )
 	            )
 	          )
@@ -29069,11 +29032,7 @@
 	  }, {
 	    key: 'onClick',
 	    value: function onClick(e) {
-	      this.setState({
-	        home: this.locationMatches('home'),
-	        upload: this.locationMatches('upload'),
-	        profile: this.locationMatches('profile')
-	      });
+	      e.preventDefault();
 	    }
 	  }]);
 	
@@ -29099,11 +29058,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	exports.default = function () {
-	  return _react2.default.createElement(
-	    'footer',
-	    null,
-	    'I AM FOOTER'
-	  );
+	  return _react2.default.createElement('footer', null);
 	};
 
 /***/ },
@@ -29132,7 +29087,6 @@
 	  return _react2.default.createElement(
 	    'div',
 	    { className: 'home-container' },
-	    _react2.default.createElement('section', { className: 'cover-picture-container' }),
 	    _react2.default.createElement(
 	      'div',
 	      { className: 'articles-container' },
@@ -29168,7 +29122,7 @@
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'I\u2019m an engineer. I thoroughly enjoy taking things apart, learning how they work, and rebuilding them to be better. In the past, I\u2019ve done this with chemical processes. Today, I make user experiences that inspire and change peoples lives. ',
+	            _constants2.default.intro,
 	            _react2.default.createElement(
 	              'a',
 	              { href: 'http://jaredjohnson.me/' },
@@ -29205,8 +29159,13 @@
 	          ),
 	          _react2.default.createElement(
 	            'a',
-	            { href: 'http://github.com/jaredjj3/' },
+	            { href: 'http://github.com/jaredjj3/' + _constants2.default.appName },
 	            'Source Code'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            _constants2.default.projectDescription
 	          ),
 	          _react2.default.createElement(
 	            'p',
@@ -29260,8 +29219,11 @@
 	});
 	exports.default = {
 	  appName: "",
+	  companyName: "",
 	  slogan: "",
-	  projectTime: ""
+	  projectTime: "",
+	  intro: "I’m an engineer. I thoroughly enjoy taking things apart, learning how they work, and rebuilding them to be better. In the past, I’ve done this with chemical processes. Today, I make user experiences that inspire and change peoples lives. ",
+	  projectDescription: ""
 	};
 
 /***/ }
