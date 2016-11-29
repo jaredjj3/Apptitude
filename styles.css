@@ -94,13 +94,8 @@ nav {
   width: 100%;
   justify-content: space-between;
   border-bottom: 1px solid whitesmoke;
-  background: rgb(25, 80, 150);
-  background: linear-gradient(rgb(25, 80, 140), rgb(25, 80, 170));
+  background: orchid;
   z-index: 3;
-}
-
-.navigation-selected {
-  color: rgb(100, 200, 255);
 }
 
 .navigation-spacer {
@@ -117,7 +112,7 @@ nav {
 .navigation-links {
   display: flex;
   align-content: center;
-  color: whitesmoke;
+  color: limegreen;
   height: inherit;
   margin-right: 100px;
 }
@@ -128,7 +123,7 @@ nav {
 }
 
 .navigation-links > li:hover {
-  color: rgb(106, 228, 247);
+  color: olive;
   cursor: pointer;
 }
 
@@ -144,8 +139,7 @@ footer {
   text-align: center;
   color: whitesmoke;
   padding: 100px 0 50px 0;
-  background: rgb(25, 80, 190);
-  background: linear-gradient(rgb(25, 80, 190), rgb(25, 80, 120));
+  background: salmon; 
 }
 
 /* HOME */
@@ -193,8 +187,7 @@ footer {
 }
 
 article {
-  background: #eee;
-  padding: 20px;
+  padding: 10px;
   margin: 15px;
   min-height: 200px;
   display: flex;
@@ -218,23 +211,27 @@ article p {
 article a {
   font-size: 14px;
   padding-top: 20px;
-  color: rgb(100, 200, 255);
+  color: limegreen;
 }
 
 article a:hover {
-  color: rgb(106, 228, 247);
+  color: olive;
 }
 
 .article-left {
   margin-right: 20px;
   padding: 10px;
   background: white;
+  box-shadow: 0 0 3px #aaa; 
+  border-bottom: 1px solid #aaa;
 }
 
 .article-right {
   padding: 10px;
   background: white;
   width: 100%;
+  box-shadow: 0 0 3px #aaa; 
+  border-bottom: 1px solid #aaa;
 }
 
 .article-center {
@@ -242,6 +239,8 @@ article a:hover {
   padding: 10px;
   width: 100%;
   padding-left: 30px;
+  box-shadow: 0 0 3px #aaa; 
+  border-bottom: 1px solid #aaa;
 
 }
 
@@ -259,165 +258,4 @@ article a:hover {
 
 .devicons-list li {
   margin-right: 10px;
-}
-
-/* UPLOAD */
-
-.upload-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.upload-button {
-  font-weight: bold;
-  width: 75px;
-  padding: 3px 10px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-.upload-button:hover {
-  cursor: pointer;
-}
-
-.upload-errors {
-  margin-top: 10px;
-  font-size: 12px;
-}
-
-.parse {
-  color: limegreen;
-  border: 2px solid limegreen;
-}
-
-.parse:hover {
-  background: limegreen;
-  color: white;
-}
-
-.clear {
-  color: red;
-  border: 2px solid red;
-}
-
-.clear:hover {
-  background: red;
-  color: white;
-}
-
-.reset {
-  margin-right: 20px;
-}
-
-/* RESUME CONTAINER */
-
-.resume-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  margin-top: 50px;
-  margin-bottom: 300px;
-}
-
-.resume-text {
-  border: 1px solid #aaa;
-  height: 400px;
-  width: 650px;
-  padding: 5px;
-  resize: none;
-  overflow-y: scroll;
-  font-family: Courier New, Courier, monospace;
-}
-
-.resume-container h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.resume-buttons-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.reset-clear-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* PROFILE */
-
-article h3 {
-  font-size: 14px;
-}
-
-.green {
-  color: limegreen;
-}
-
-/* EXPERIENCE */
-
-.experience-item h2 {
-  margin-top: 20px;
-  font-style: oblique;
-}
-
-.experience-item h3 {
-  font-weight: bold;
-  max-width: 200px;
-}
-
-.experience-item h4 {
-  font-size: 12px;
-  padding: 0;
-  margin: 0;
-  font-weight: normal;
-}
-
-.experience-duties {
-  margin-top: 5px;
-}
-
-.experience-duties li {
-  font-size: 12px;
-  list-style: circle;
-  margin-left: 15px;
-}
-
-.experience-item-list {
-  display: flex;
-  justify-content: flex-start; 
-  flex-flow: row wrap;
-}
-
-.experience-item-list > li {
-   margin-right: 20px;
-   max-width: 200px;
-}
-
-/* SKILLS */
-
-.skills-list {
-  display: flex;
-  justify-content: flex-start;
-  flex-flow: row wrap;
-}
-
-.skills-list > li { 
-  margin-right: 10px;
-  margin-top: 10px;
-}
-
-.skill-item {
-  display: inline-flex;
-  background: rgb(25, 80, 190);
-  color: white;
-  padding: 6px 15px;
-}
-
-.skill-item:hover {
-  background: rgb(25, 80, 255);
 }
