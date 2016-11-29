@@ -23,7 +23,7 @@ export default class extends React.Component {
             </ul>
           </div>
         </nav>
-        <div className="navigation-spacer navigation-container"></div>
+        <div className="navigation-spacer"></div>
       </div>
     );
   }

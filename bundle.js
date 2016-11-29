@@ -29039,7 +29039,7 @@
 	            )
 	          )
 	        ),
-	        _react2.default.createElement('div', { className: 'navigation-spacer navigation-container' })
+	        _react2.default.createElement('div', { className: 'navigation-spacer' })
 	      );
 	    }
 	
