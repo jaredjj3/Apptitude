@@ -22555,8 +22555,12 @@
 	
 	var _NullReducer = __webpack_require__(280);
 	
+	var _NullReducer2 = _interopRequireDefault(_NullReducer);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
 	exports.default = (0, _redux.combineReducers)({
-	  null: _NullReducer.NullReducer
+	  null: _NullReducer2.default
 	});
 
 /***/ },
@@ -29011,7 +29015,7 @@
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'logo-container' },
-	            _react2.default.createElement('img', { className: 'logo', src: 'assets/logo.png', alt: _constants2.default.companyName })
+	            _react2.default.createElement('img', { className: 'logo', src: 'assets/logo.jpg', alt: _constants2.default.companyName })
 	          ),
 	          _react2.default.createElement(
 	            'ul',
@@ -29240,7 +29244,10 @@
 	  value: true
 	});
 	
-	exports.default = function (state, action) {
+	exports.default = function () {
+	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+	  var action = arguments[1];
+	
 	  Object.freeze(state);
 	  var nextState = Object.assign({}, state);
 	  switch (action.type) {

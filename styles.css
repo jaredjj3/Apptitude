@@ -133,6 +133,10 @@ nav {
   margin: 20px 20px 20px 100px;
 }
 
+.logo {
+  max-height: 100px;
+}
+
 /* FOOTER */
 
 footer {
