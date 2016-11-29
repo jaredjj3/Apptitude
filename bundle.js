@@ -29014,24 +29014,32 @@
 	          null,
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'logo-container' },
-	            _react2.default.createElement('img', { className: 'logo', src: 'assets/logo.jpg', alt: _constants2.default.companyName })
+	            { className: 'navigation-left' },
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: 'home', className: 'logo-container' },
+	              _react2.default.createElement('img', { className: 'logo', src: 'assets/logo.jpg', alt: _constants2.default.companyName })
+	            )
 	          ),
 	          _react2.default.createElement(
-	            'ul',
-	            { onClick: this.onClick.bind(this), className: 'navigation-links' },
+	            'div',
+	            { className: 'navigation-right' },
 	            _react2.default.createElement(
-	              'li',
-	              { className: 'home' },
+	              'ul',
+	              { onClick: this.onClick.bind(this), className: 'navigation-links' },
 	              _react2.default.createElement(
-	                _reactRouter.Link,
-	                { to: 'home' },
-	                'home'
+	                'li',
+	                { className: 'home' },
+	                _react2.default.createElement(
+	                  _reactRouter.Link,
+	                  { to: 'home' },
+	                  'home'
+	                )
 	              )
 	            )
 	          )
 	        ),
-	        _react2.default.createElement('div', { className: 'navigation-spacer' })
+	        _react2.default.createElement('div', { className: 'navigation-spacer navigation-container' })
 	      );
 	    }
 	

@@ -96,12 +96,13 @@ nav {
   border-bottom: 1px solid whitesmoke;
   background: orchid;
   z-index: 3;
+  height: 60px;
 }
 
 .navigation-spacer {
   display: block;
   color: transparent;
-  height: inherit;
+  height: 60px;
 }
 
 .navigation-container {
@@ -114,12 +115,13 @@ nav {
   align-content: center;
   color: limegreen;
   height: inherit;
-  margin-right: 100px;
 }
 
-.navigation-links > li {
-  padding-top: 20px;
-  margin-left: 25px;
+.navigation-links li {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .navigation-links > li:hover {
@@ -127,14 +129,27 @@ nav {
   cursor: pointer;
 }
 
+.navigation-left {
+   margin-left: 100px;
+}
+
+.navigation-right {
+  margin-right: 100px;
+}
+
+.navigation-left, .navigation-right {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
 .logo-container {
-  min-width: 100px;
-  max-width: 100px;
-  margin: 20px 20px 20px 100px;
+  height: 60px;
 }
 
 .logo {
-  max-height: 100px;
+  height: inherit;
+  width: auto;
 }
 
 /* FOOTER */
