@@ -1,5 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router';
+import React      from 'react';
+import { Link }   from 'react-router';
+import constants  from './util/constants';
 
 export default () => {
   return(
@@ -24,14 +25,14 @@ export default () => {
         </article>
         <article>
           <div className="article-center">
-            <h1>I AM APP NAME</h1>
-            <h2>I AM SLOGAN</h2>
+            <h1>{constants.appName}</h1>
+            <h2>{constants.slogan}</h2>
             <p>
-              <b>Project time: I AM PROJECT TIME</b>
+              <b>Project time: {constants.projectTime}</b>
             </p>
             <a href="http://github.com/jaredjj3/">Source Code</a>
             <p>
-              I AM APP NAME was brought to you by:
+              {constants.appName} was brought to you by:
             </p>
             <ul className="devicons-list">
               <li><i className="devicons devicon-react-original-wordmark colored"></i></li>
