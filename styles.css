@@ -122,6 +122,7 @@ nav {
   align-content: center;
   justify-content: center;
   flex-direction: column;
+  padding-right: 15px;
 }
 
 .navigation-links > li:hover {
