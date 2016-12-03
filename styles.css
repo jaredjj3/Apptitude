@@ -1,5 +1,12 @@
-/* MAIN */
 body * {
-  color: red; }
+  color: #adadad; }
+
+.children-container {
+  width: 100%; }
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 /*# sourceMappingURL=styles.css.map */

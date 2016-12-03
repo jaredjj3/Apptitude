@@ -1,6 +1,19 @@
-/* MAIN */
-$primary-color: red;
+// CONSTANTS
+$primary-color: rgb(173, 173, 173);
+
+// MAIN
 
 body * {
   color: $primary-color;
 }
+
+.children-container {
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

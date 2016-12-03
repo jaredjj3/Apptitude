@@ -29173,8 +29173,17 @@
 	exports.default = function () {
 	  return _react2.default.createElement(
 	    'div',
-	    null,
-	    'I AM HOME'
+	    { className: 'home-container' },
+	    _react2.default.createElement(
+	      'section',
+	      null,
+	      'I AM SECTION 1'
+	    ),
+	    _react2.default.createElement(
+	      'section',
+	      null,
+	      'I AM SECTION 2'
+	    )
 	  );
 	};
 
