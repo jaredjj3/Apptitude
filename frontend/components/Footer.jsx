@@ -2,7 +2,8 @@ import React from 'react';
 
 export default () => {
   return(
-    <footer>
+    <footer className="footer">
+      I AM FOOTER
     </footer>
   );
 };
