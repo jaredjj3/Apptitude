@@ -10,12 +10,12 @@ export default class extends React.Component {
     return(
       <div className="home-container">
         <Navigation location={this.props.location} />
-        <section>
-          I AM SECTION 1
-        </section>
-        <section>
-          I AM SECTION 2
-        </section>
+        <div className="home-content">
+          <div className="col-1">
+          </div>
+          <div className="col-2">
+          </div>
+        </div>
       </div>
     );
   }

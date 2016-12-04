@@ -10,7 +10,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "./node_modules/.bin/webpack -w",
     "sass": "sass --watch styles.scss:styles.css"
-
   },
   "repository": {
     "type": "git",

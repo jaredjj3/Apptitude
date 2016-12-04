@@ -22632,7 +22632,7 @@
 	
 	var _App2 = _interopRequireDefault(_App);
 	
-	var _HomeContainer = __webpack_require__(282);
+	var _HomeContainer = __webpack_require__(277);
 	
 	var _HomeContainer2 = _interopRequireDefault(_HomeContainer);
 	
@@ -28933,7 +28933,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Footer = __webpack_require__(279);
+	var _Footer = __webpack_require__(276);
 	
 	var _Footer2 = _interopRequireDefault(_Footer);
 	
@@ -28954,27 +28954,7 @@
 	};
 
 /***/ },
-/* 276 */,
-/* 277 */,
-/* 278 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.default = {
-	  appName: "",
-	  companyName: "",
-	  slogan: "",
-	  projectTime: "",
-	  intro: "I’m an engineer. I thoroughly enjoy taking things apart, learning how they work, and rebuilding them to be better. In the past, I’ve done this with chemical processes. Today, I make user experiences that inspire and change peoples lives. ",
-	  projectDescription: ""
-	};
-
-/***/ },
-/* 279 */
+/* 276 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -29028,8 +29008,35 @@
 	};
 
 /***/ },
-/* 280 */,
-/* 281 */
+/* 277 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _reactRedux = __webpack_require__(205);
+	
+	var _Home = __webpack_require__(278);
+	
+	var _Home2 = _interopRequireDefault(_Home);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var mapStateToProps = function mapStateToProps(state) {
+	  return {};
+	};
+	
+	var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+	  return {};
+	};
+	
+	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_Home2.default);
+
+/***/ },
+/* 278 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29046,15 +29053,15 @@
 	
 	var _reactRouter = __webpack_require__(214);
 	
-	var _constants = __webpack_require__(278);
+	var _constants = __webpack_require__(279);
 	
 	var _constants2 = _interopRequireDefault(_constants);
 	
-	var _Navigation = __webpack_require__(283);
+	var _Navigation = __webpack_require__(280);
 	
 	var _Navigation2 = _interopRequireDefault(_Navigation);
 	
-	var _Footer = __webpack_require__(279);
+	var _Footer = __webpack_require__(276);
 	
 	var _Footer2 = _interopRequireDefault(_Footer);
 	
@@ -29083,14 +29090,10 @@
 	        { className: 'home-container' },
 	        _react2.default.createElement(_Navigation2.default, { location: this.props.location }),
 	        _react2.default.createElement(
-	          'section',
-	          null,
-	          'I AM SECTION 1'
-	        ),
-	        _react2.default.createElement(
-	          'section',
-	          null,
-	          'I AM SECTION 2'
+	          'div',
+	          { className: 'home-content' },
+	          _react2.default.createElement('div', { className: 'col-1' }),
+	          _react2.default.createElement('div', { className: 'col-2' })
 	        )
 	      );
 	    }
@@ -29102,35 +29105,25 @@
 	exports.default = _class;
 
 /***/ },
-/* 282 */
-/***/ function(module, exports, __webpack_require__) {
+/* 279 */
+/***/ function(module, exports) {
 
-	'use strict';
+	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	
-	var _reactRedux = __webpack_require__(205);
-	
-	var _Home = __webpack_require__(281);
-	
-	var _Home2 = _interopRequireDefault(_Home);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var mapStateToProps = function mapStateToProps(state) {
-	  return {};
+	exports.default = {
+	  appName: "",
+	  companyName: "",
+	  slogan: "",
+	  projectTime: "",
+	  intro: "I’m an engineer. I thoroughly enjoy taking things apart, learning how they work, and rebuilding them to be better. In the past, I’ve done this with chemical processes. Today, I make user experiences that inspire and change peoples lives. ",
+	  projectDescription: ""
 	};
-	
-	var mapDispatchToProps = function mapDispatchToProps(dispatch) {
-	  return {};
-	};
-	
-	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_Home2.default);
 
 /***/ },
-/* 283 */
+/* 280 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29147,7 +29140,7 @@
 	
 	var _reactRouter = __webpack_require__(214);
 	
-	var _constants = __webpack_require__(278);
+	var _constants = __webpack_require__(279);
 	
 	var _constants2 = _interopRequireDefault(_constants);
 	
