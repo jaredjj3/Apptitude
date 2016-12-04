@@ -16,7 +16,6 @@ export default class extends React.Component {
         <section>
           I AM SECTION 2
         </section>
-        <Footer />
       </div>
     );
   }

@@ -1,19 +1,56 @@
 // CONSTANTS
-$primary-color: rgb(173, 173, 173);
+$color1: red;
+$color2: green;
+$color3: blue;
+$link-color: red;
+$link-color-hover: darkred;
 
 // MAIN
+.app-container {
 
-body * {
-  color: $primary-color;
 }
 
-.children-container {
+a {
+  color: $link-color;
+}
+
+a:hover {
+  color: $link-color-hover;
+}
+
+.row-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// NAV
+nav.navbar.navbar-default {
+  border-radius: 0;
   width: 100%;
 }
 
+// FOOTER
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 60px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
+
+.footer-links-list {
+  list-style: none;
+}
+
+.footer-links-list > li {
+  padding: 0 20px;
+}
+
 

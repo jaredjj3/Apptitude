@@ -1,7 +1,12 @@
 import React from 'react';
 
+import Footer from './Footer';
+
 export default ({ children }) => (
   <div className="app-container">
-      { children }
+    <div className="children-container">
+      { children }  
+    </div>
+    <Footer />
   </div>
 );

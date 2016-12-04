@@ -28923,7 +28923,7 @@
 /* 275 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -28933,14 +28933,23 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _Footer = __webpack_require__(279);
+	
+	var _Footer2 = _interopRequireDefault(_Footer);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	exports.default = function (_ref) {
 	  var children = _ref.children;
 	  return _react2.default.createElement(
-	    "div",
-	    { className: "app-container" },
-	    children
+	    'div',
+	    { className: 'app-container' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'children-container' },
+	      children
+	    ),
+	    _react2.default.createElement(_Footer2.default, null)
 	  );
 	};
 
@@ -28983,8 +28992,38 @@
 	exports.default = function () {
 	  return _react2.default.createElement(
 	    "footer",
-	    { className: "footer" },
-	    "I AM FOOTER"
+	    { className: "row-flex footer" },
+	    _react2.default.createElement(
+	      "ul",
+	      { className: "row-flex footer-links-list" },
+	      _react2.default.createElement(
+	        "li",
+	        null,
+	        _react2.default.createElement(
+	          "a",
+	          { href: "http://jaredjohnson.me/" },
+	          "portfolio"
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "li",
+	        null,
+	        _react2.default.createElement(
+	          "a",
+	          { href: "http://linkedin.com/in/jjohnsoneit" },
+	          "linkedin"
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "li",
+	        null,
+	        _react2.default.createElement(
+	          "a",
+	          { href: "http://github.com/jaredjj3" },
+	          "github"
+	        )
+	      )
+	    )
 	  );
 	};
 
@@ -29052,8 +29091,7 @@
 	          'section',
 	          null,
 	          'I AM SECTION 2'
-	        ),
-	        _react2.default.createElement(_Footer2.default, null)
+	        )
 	      );
 	    }
 	  }]);
@@ -29174,24 +29212,6 @@
 	                  _reactRouter.Link,
 	                  { to: 'home' },
 	                  'home'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'li',
-	                { className: '' },
-	                _react2.default.createElement(
-	                  _reactRouter.Link,
-	                  { to: '#' },
-	                  'Link'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'li',
-	                { className: '' },
-	                _react2.default.createElement(
-	                  _reactRouter.Link,
-	                  { to: '#' },
-	                  'Link'
 	                )
 	              )
 	            )

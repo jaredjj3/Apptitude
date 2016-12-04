@@ -27,8 +27,6 @@ export default class extends React.Component {
             </ul>
             <ul className="nav navbar-nav navbar-right">
               <li className={this.isActive('/home')}><Link to="home">home</Link></li>
-              <li className=""><Link to="#">Link</Link></li>
-              <li className=""><Link to="#">Link</Link></li>
             </ul>
           </div>
         </div>
@@ -39,6 +37,6 @@ export default class extends React.Component {
   // helpers
   
   isActive (pathname) {
-    return this.props.location.pathname === pathname ? "active"  : "";
+    return this.props.location.pathname === pathname ? "active" : "";
   }
 }
