@@ -22632,9 +22632,9 @@
 	
 	var _App2 = _interopRequireDefault(_App);
 	
-	var _Home = __webpack_require__(280);
+	var _HomeContainer = __webpack_require__(282);
 	
-	var _Home2 = _interopRequireDefault(_Home);
+	var _HomeContainer2 = _interopRequireDefault(_HomeContainer);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -22660,7 +22660,7 @@
 	      _react2.default.createElement(
 	        _reactRouter.Route,
 	        { path: '/', component: _App2.default, onEnter: onEnter },
-	        _react2.default.createElement(_reactRouter.Route, { path: 'home', component: _Home2.default })
+	        _react2.default.createElement(_reactRouter.Route, { path: 'home', component: _HomeContainer2.default })
 	      )
 	    )
 	  );
@@ -28923,7 +28923,7 @@
 /* 275 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -28933,9 +28933,87 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _NavigationContainer = __webpack_require__(276);
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var _NavigationContainer2 = _interopRequireDefault(_NavigationContainer);
+	exports.default = function (_ref) {
+	  var children = _ref.children;
+	  return _react2.default.createElement(
+	    "div",
+	    { className: "app-container" },
+	    children
+	  );
+	};
+
+/***/ },
+/* 276 */,
+/* 277 */,
+/* 278 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  appName: "",
+	  companyName: "",
+	  slogan: "",
+	  projectTime: "",
+	  intro: "I’m an engineer. I thoroughly enjoy taking things apart, learning how they work, and rebuilding them to be better. In the past, I’ve done this with chemical processes. Today, I make user experiences that inspire and change peoples lives. ",
+	  projectDescription: ""
+	};
+
+/***/ },
+/* 279 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function () {
+	  return _react2.default.createElement(
+	    "footer",
+	    { className: "footer" },
+	    "I AM FOOTER"
+	  );
+	};
+
+/***/ },
+/* 280 */,
+/* 281 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(214);
+	
+	var _constants = __webpack_require__(278);
+	
+	var _constants2 = _interopRequireDefault(_constants);
+	
+	var _Navigation = __webpack_require__(283);
+	
+	var _Navigation2 = _interopRequireDefault(_Navigation);
 	
 	var _Footer = __webpack_require__(279);
 	
@@ -28943,23 +29021,50 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	exports.default = function (_ref) {
-	  var children = _ref.children;
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    _react2.default.createElement(_NavigationContainer2.default, null),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'children-container' },
-	      children
-	    ),
-	    _react2.default.createElement(_Footer2.default, null)
-	  );
-	};
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var _class = function (_React$Component) {
+	  _inherits(_class, _React$Component);
+	
+	  function _class() {
+	    _classCallCheck(this, _class);
+	
+	    return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+	  }
+	
+	  _createClass(_class, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'home-container' },
+	        _react2.default.createElement(_Navigation2.default, { location: this.props.location }),
+	        _react2.default.createElement(
+	          'section',
+	          null,
+	          'I AM SECTION 1'
+	        ),
+	        _react2.default.createElement(
+	          'section',
+	          null,
+	          'I AM SECTION 2'
+	        ),
+	        _react2.default.createElement(_Footer2.default, null)
+	      );
+	    }
+	  }]);
+	
+	  return _class;
+	}(_react2.default.Component);
+	
+	exports.default = _class;
 
 /***/ },
-/* 276 */
+/* 282 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28970,9 +29075,9 @@
 	
 	var _reactRedux = __webpack_require__(205);
 	
-	var _Navigation = __webpack_require__(277);
+	var _Home = __webpack_require__(281);
 	
-	var _Navigation2 = _interopRequireDefault(_Navigation);
+	var _Home2 = _interopRequireDefault(_Home);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -28984,10 +29089,10 @@
 	  return {};
 	};
 	
-	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_Navigation2.default);
+	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_Home2.default);
 
 /***/ },
-/* 277 */
+/* 283 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29050,8 +29155,8 @@
 	              _react2.default.createElement('span', { className: 'icon-bar' })
 	            ),
 	            _react2.default.createElement(
-	              'a',
-	              { className: 'navbar-brand', href: '#' },
+	              _reactRouter.Link,
+	              { to: 'home', className: 'navbar-brand' },
 	              'Brand'
 	            )
 	          ),
@@ -29064,21 +29169,16 @@
 	              { className: 'nav navbar-nav navbar-right' },
 	              _react2.default.createElement(
 	                'li',
-	                { className: 'active' },
+	                { className: this.isActive('/home') },
 	                _react2.default.createElement(
 	                  _reactRouter.Link,
-	                  { to: '#' },
-	                  'Link',
-	                  _react2.default.createElement(
-	                    'span',
-	                    { className: 'sr-only' },
-	                    '(current)'
-	                  )
+	                  { to: 'home' },
+	                  'home'
 	                )
 	              ),
 	              _react2.default.createElement(
 	                'li',
-	                null,
+	                { className: '' },
 	                _react2.default.createElement(
 	                  _reactRouter.Link,
 	                  { to: '#' },
@@ -29087,7 +29187,7 @@
 	              ),
 	              _react2.default.createElement(
 	                'li',
-	                null,
+	                { className: '' },
 	                _react2.default.createElement(
 	                  _reactRouter.Link,
 	                  { to: '#' },
@@ -29099,93 +29199,20 @@
 	        )
 	      );
 	    }
+	
+	    // helpers
+	
+	  }, {
+	    key: 'isActive',
+	    value: function isActive(pathname) {
+	      return this.props.location.pathname === pathname ? "active" : "";
+	    }
 	  }]);
 	
 	  return _class;
 	}(_react2.default.Component);
 	
 	exports.default = _class;
-
-/***/ },
-/* 278 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.default = {
-	  appName: "",
-	  companyName: "",
-	  slogan: "",
-	  projectTime: "",
-	  intro: "I’m an engineer. I thoroughly enjoy taking things apart, learning how they work, and rebuilding them to be better. In the past, I’ve done this with chemical processes. Today, I make user experiences that inspire and change peoples lives. ",
-	  projectDescription: ""
-	};
-
-/***/ },
-/* 279 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = function () {
-	  return _react2.default.createElement(
-	    "footer",
-	    { className: "footer" },
-	    "I AM FOOTER"
-	  );
-	};
-
-/***/ },
-/* 280 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactRouter = __webpack_require__(214);
-	
-	var _constants = __webpack_require__(278);
-	
-	var _constants2 = _interopRequireDefault(_constants);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = function () {
-	  return _react2.default.createElement(
-	    'div',
-	    { className: 'home-container' },
-	    _react2.default.createElement(
-	      'section',
-	      null,
-	      'I AM SECTION 1'
-	    ),
-	    _react2.default.createElement(
-	      'section',
-	      null,
-	      'I AM SECTION 2'
-	    )
-	  );
-	};
 
 /***/ }
 /******/ ]);

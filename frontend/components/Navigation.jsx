@@ -1,7 +1,11 @@
-import React                 from 'react';
-import { Link, hashHistory } from 'react-router';
+import React from 'react';
+import { 
+  Link, 
+  hashHistory,
+  withRouter 
+} from 'react-router';
 
-import constants from '../../util/constants';
+import constants from '../util/constants';
 
 export default class extends React.Component {
   render () {
@@ -15,20 +19,26 @@ export default class extends React.Component {
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-            <a className="navbar-brand" href="#">Brand</a>
+            <Link to="home" className="navbar-brand">Brand</Link>
           </div>
 
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul className="nav navbar-nav">
             </ul>
             <ul className="nav navbar-nav navbar-right">
-              <li className="active"><Link to="#">Link<span className="sr-only">(current)</span></Link></li>
-              <li><Link to="#">Link</Link></li>
-              <li><Link to="#">Link</Link></li>
+              <li className={this.isActive('/home')}><Link to="home">home</Link></li>
+              <li className=""><Link to="#">Link</Link></li>
+              <li className=""><Link to="#">Link</Link></li>
             </ul>
           </div>
         </div>
       </nav>  
     );
+  }
+
+  // helpers
+  
+  isActive (pathname) {
+    return this.props.location.pathname === pathname ? "active"  : "";
   }
 }

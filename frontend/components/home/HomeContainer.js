@@ -1,9 +1,8 @@
 import { connect } from 'react-redux';
-
-import Navigation from './Navigation';
+import Home from './Home';
 
 const mapStateToProps = state => ({
-  
+
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -13,4 +12,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Navigation);
+)(Home); 
