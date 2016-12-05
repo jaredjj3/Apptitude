@@ -1,7 +1,7 @@
 
 
 # Apptitude 
-## *Unlock your potential.*
+*Unlock your potential.*
 [Live](http://jaredjohnson.me/ghpages-react-boilerplate)
 
 ### What is Apptitude?
