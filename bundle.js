@@ -29125,7 +29125,9 @@
 	                'p',
 	                null,
 	                _constants2.default.appName,
-	                ' was made to show you how I can work for you.'
+	                ' was made to show that I can solve ',
+	                _constants2.default.companyName,
+	                '\'s problems.'
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -29165,7 +29167,7 @@
 	              _react2.default.createElement(
 	                'p',
 	                null,
-	                'This is one of many projects. Let\'s connect.'
+	                'The proof is in the projects. Let\'s connect.'
 	              )
 	            )
 	          )

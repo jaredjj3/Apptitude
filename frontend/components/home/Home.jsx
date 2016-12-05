@@ -20,7 +20,7 @@ export default class extends React.Component {
             <li className="feature-list-item">
               <i className="material-icons">person</i>
               <h1>PURPOSE</h1>
-              <p>{$.appName} was made to show you how I can work for you.</p>
+              <p>{$.appName} was made to show that I can solve {$.companyName}'s problems.</p>
             </li>
             <li className="feature-list-item">
               <i className="material-icons">show_chart</i>
@@ -30,7 +30,7 @@ export default class extends React.Component {
             <li className="feature-list-item">
               <i className="material-icons">event_seat</i>
               <h1>PASSION</h1>
-              <p>This is one of many projects. Let's connect.</p>
+              <p>The proof is in the projects. Let's connect.</p>
             </li>
           </ul>
         </div>
