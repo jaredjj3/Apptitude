@@ -29260,18 +29260,32 @@
 	          { className: 'nav-right' },
 	          _react2.default.createElement(
 	            'ul',
-	            { className: 'nav-links-list' },
+	            { className: 'nav-links-list row-flex' },
 	            _react2.default.createElement(
 	              'li',
 	              null,
 	              _react2.default.createElement(
+	                'a',
+	                { href: 'http://jaredjohnson.me/' },
+	                'portfolio'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'assets/Jared_Johnson_Resume.pdf' },
+	                'resume'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              { className: this.isActive('/home') },
+	              _react2.default.createElement(
 	                _reactRouter.Link,
 	                { to: 'home' },
-	                _react2.default.createElement(
-	                  'i',
-	                  { className: 'material-icons' },
-	                  'home'
-	                )
+	                'home'
 	              )
 	            )
 	          )

@@ -17,8 +17,10 @@ export default class extends React.Component {
           </div>
         </div>
         <div className="nav-right">
-          <ul className="nav-links-list">
-            <li><Link to="home"><i className="material-icons">home</i></Link></li>
+          <ul className="nav-links-list row-flex">
+            <li><a href="http://jaredjohnson.me/">portfolio</a></li>
+            <li><a href="assets/Jared_Johnson_Resume.pdf">resume</a></li>
+            <li className={this.isActive('/home')}><Link to="home">home</Link></li>
           </ul>
         </div>
       </nav>  

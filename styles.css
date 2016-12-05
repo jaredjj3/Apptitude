@@ -88,12 +88,21 @@ nav.nav-container {
   align-items: center;
 }
 
-nav .nav-left {
+.nav-left {
   margin-left: 3em;
 }
 
-nav .nav-right {
+.nav-right {
   margin-right: 3em;
+}
+
+.nav-links-list li {
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+nav .active {
+  text-decoration: underline;
 }
 
  /* FOOTER */
