@@ -1,3 +1,58 @@
+/* RESET */
+
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, h3, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small,
+select {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="submit"],
+textarea,
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type=checkbox] {
+  -webkit-appearance:checkbox;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
 /* MAIN */
 
 .row-flex {
@@ -37,6 +92,8 @@ nav.navbar.navbar-default {
   height: 60px;
   width: 100%;
   background: lightsalmon;
+  position: absolute;
+  bottom: 0;
 }
 
 .footer-links-list {
@@ -53,7 +110,7 @@ nav.navbar.navbar-default {
 
 .home-container {
   min-width: 600px;
-  height: 100vh;
+  height: 900px;
 }
 
 .home-container img {
@@ -67,11 +124,11 @@ nav.navbar.navbar-default {
 }
 
 .home-content .col-1 {
-  flex-grow: 1; 
+  width: 33%;
 }
 
 .home-content .col-2 {
-  flex-grow: 2; 
+  width: 66%;
 }
 
 .home-content > div {
@@ -79,14 +136,16 @@ nav.navbar.navbar-default {
 }
 
 .home-content .row-1 {
-  width: inherit;
+  background: orchid;
+}
+
+.home-content .row-2 {
+  background: lightcoral;
 }
 
 .feature-icons {
   font-size: 48px;
   width: 80%;
-  list-style: none;
-  list-style-type: none;
   display: inline-flex;
   flex-wrap: wrap;
   padding: 0;

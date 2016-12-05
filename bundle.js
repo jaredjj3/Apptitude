@@ -29088,103 +29088,6 @@
 	        'div',
 	        { className: 'home-container' },
 	        _react2.default.createElement(_Navigation2.default, { location: this.props.location }),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'home-content' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'col-1' },
-	            _react2.default.createElement(
-	              'article',
-	              { className: 'content-container' },
-	              _react2.default.createElement('div', { className: 'row-1' }),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'row-2' },
-	                _react2.default.createElement(
-	                  'ul',
-	                  { className: 'feature-icons' },
-	                  _react2.default.createElement(
-	                    'li',
-	                    null,
-	                    _react2.default.createElement('i', { className: 'devicon-ruby-plain colored' })
-	                  ),
-	                  _react2.default.createElement(
-	                    'li',
-	                    null,
-	                    _react2.default.createElement('i', { className: 'devicon-rails-plain colored' })
-	                  ),
-	                  _react2.default.createElement(
-	                    'li',
-	                    null,
-	                    _react2.default.createElement('i', { className: 'devicon-react-original colored' })
-	                  ),
-	                  _react2.default.createElement(
-	                    'li',
-	                    null,
-	                    _react2.default.createElement('i', { className: 'devicon-angularjs-plain colored' })
-	                  ),
-	                  _react2.default.createElement(
-	                    'li',
-	                    null,
-	                    _react2.default.createElement('i', { className: 'devicon-postgresql-plain colored' })
-	                  ),
-	                  _react2.default.createElement(
-	                    'li',
-	                    null,
-	                    _react2.default.createElement('i', { className: 'devicon-javascript-plain colored' })
-	                  ),
-	                  _react2.default.createElement(
-	                    'li',
-	                    null,
-	                    _react2.default.createElement('i', { className: 'devicon-jquery-plain colored' })
-	                  ),
-	                  _react2.default.createElement(
-	                    'li',
-	                    null,
-	                    _react2.default.createElement('i', { className: 'devicon-nodejs-plain colored' })
-	                  ),
-	                  _react2.default.createElement(
-	                    'li',
-	                    null,
-	                    _react2.default.createElement('i', { className: 'devicon-html5-plain colored' })
-	                  ),
-	                  _react2.default.createElement(
-	                    'li',
-	                    null,
-	                    _react2.default.createElement('i', { className: 'devicon-sass-original colored' })
-	                  ),
-	                  _react2.default.createElement(
-	                    'li',
-	                    null,
-	                    _react2.default.createElement('i', { className: 'devicon-git-plain colored' })
-	                  ),
-	                  _react2.default.createElement(
-	                    'li',
-	                    null,
-	                    _react2.default.createElement('i', { className: 'devicon-python-plain colored' })
-	                  ),
-	                  _react2.default.createElement(
-	                    'li',
-	                    null,
-	                    _react2.default.createElement('i', { className: 'devicon-heroku-original colored' })
-	                  ),
-	                  _react2.default.createElement(
-	                    'li',
-	                    null,
-	                    _react2.default.createElement('i', { className: 'devicon-amazonwebservices-plain colored' })
-	                  ),
-	                  _react2.default.createElement(
-	                    'li',
-	                    null,
-	                    _react2.default.createElement('i', { className: 'devicon-github-plain colored' })
-	                  )
-	                )
-	              )
-	            )
-	          ),
-	          _react2.default.createElement('div', { className: 'col-2' })
-	        ),
 	        _react2.default.createElement(_Footer2.default, null)
 	      );
 	    }
@@ -29257,50 +29160,9 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'nav',
-	        { className: 'navbar navbar-default' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'container-fluid' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'navbar-header' },
-	            _react2.default.createElement(
-	              'button',
-	              { type: 'button', className: 'navbar-toggle collapsed', 'data-toggle': 'collapse', 'data-target': '#bs-example-navbar-collapse-1', 'aria-expanded': 'false' },
-	              _react2.default.createElement(
-	                'span',
-	                { className: 'sr-only' },
-	                'Toggle navigation'
-	              ),
-	              _react2.default.createElement('span', { className: 'icon-bar' }),
-	              _react2.default.createElement('span', { className: 'icon-bar' }),
-	              _react2.default.createElement('span', { className: 'icon-bar' })
-	            ),
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: 'home', className: 'navbar-brand' },
-	              'Brand'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'collapse navbar-collapse', id: 'bs-example-navbar-collapse-1' },
-	            _react2.default.createElement('ul', { className: 'nav navbar-nav' }),
-	            _react2.default.createElement(
-	              'ul',
-	              { className: 'nav navbar-nav navbar-right' },
-	              _react2.default.createElement(
-	                'li',
-	                { className: this.isActive('/home') },
-	                _react2.default.createElement(
-	                  _reactRouter.Link,
-	                  { to: 'home' },
-	                  'home'
-	                )
-	              )
-	            )
-	          )
-	        )
+	        null,
+	        _react2.default.createElement('div', { className: 'nav-left' }),
+	        _react2.default.createElement('div', null)
 	      );
 	    }
 	
