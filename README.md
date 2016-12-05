@@ -2,7 +2,7 @@
 
 # Apptitude 
 *Unlock your potential.*
-[Live](http://jaredjohnson.me/ghpages-react-boilerplate)
+[Live](http://jaredjohnson.me/Apptitude)
 
 ### What is Apptitude?
 Apptitude is boilerplate code that allows you to quickly deploy a React.js/Redux.js app (with pseudo routes) on Github pages in minutes. It's now easier than ever to share software!
