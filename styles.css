@@ -179,7 +179,7 @@ nav .active {
 
 .feature-list-item p {
   font-size: 14px;
-  margin-top: 10px;
+  padding: 10px 30px 0 30px;
 }
 
 .feature-list-item a {
