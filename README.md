@@ -7,7 +7,7 @@
 ### What is Apptitude?
 Apptitude is boilerplate code that allows you to quickly deploy a React.js/Redux.js app (with pseudo routes) on Github pages in minutes. It's now easier than ever to share software!
 
-The bundle.js
+The output file of webpack (named 'bundle.js' by default) must be updated and uploaded to Github in order for it to work on Github pages.
 
 ### How to Use
 1. Clone this project into your project folder.
