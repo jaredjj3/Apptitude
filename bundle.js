@@ -28948,8 +28948,7 @@
 	      'div',
 	      { className: 'children-container' },
 	      children
-	    ),
-	    _react2.default.createElement(_Footer2.default, null)
+	    )
 	  );
 	};
 
@@ -29092,9 +29091,101 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'home-content' },
-	          _react2.default.createElement('div', { className: 'col-1' }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col-1' },
+	            _react2.default.createElement(
+	              'article',
+	              { className: 'content-container' },
+	              _react2.default.createElement('div', { className: 'row-1' }),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'row-2' },
+	                _react2.default.createElement(
+	                  'ul',
+	                  { className: 'feature-icons' },
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement('i', { className: 'devicon-ruby-plain colored' })
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement('i', { className: 'devicon-rails-plain colored' })
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement('i', { className: 'devicon-react-original colored' })
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement('i', { className: 'devicon-angularjs-plain colored' })
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement('i', { className: 'devicon-postgresql-plain colored' })
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement('i', { className: 'devicon-javascript-plain colored' })
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement('i', { className: 'devicon-jquery-plain colored' })
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement('i', { className: 'devicon-nodejs-plain colored' })
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement('i', { className: 'devicon-html5-plain colored' })
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement('i', { className: 'devicon-sass-original colored' })
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement('i', { className: 'devicon-git-plain colored' })
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement('i', { className: 'devicon-python-plain colored' })
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement('i', { className: 'devicon-heroku-original colored' })
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement('i', { className: 'devicon-amazonwebservices-plain colored' })
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement('i', { className: 'devicon-github-plain colored' })
+	                  )
+	                )
+	              )
+	            )
+	          ),
 	          _react2.default.createElement('div', { className: 'col-2' })
-	        )
+	        ),
+	        _react2.default.createElement(_Footer2.default, null)
 	      );
 	    }
 	  }]);

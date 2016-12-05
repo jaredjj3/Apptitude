@@ -7,6 +7,5 @@ export default ({ children }) => (
     <div className="children-container">
       { children }  
     </div>
-    <Footer />
   </div>
 );
