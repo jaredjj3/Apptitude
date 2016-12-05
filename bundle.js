@@ -29052,7 +29052,7 @@
 	
 	var _reactRouter = __webpack_require__(214);
 	
-	var _Navigation = __webpack_require__(280);
+	var _Navigation = __webpack_require__(279);
 	
 	var _Navigation2 = _interopRequireDefault(_Navigation);
 	
@@ -29060,7 +29060,7 @@
 	
 	var _Footer2 = _interopRequireDefault(_Footer);
 	
-	var _constants = __webpack_require__(279);
+	var _constants = __webpack_require__(280);
 	
 	var _constants2 = _interopRequireDefault(_constants);
 	
@@ -29184,23 +29184,6 @@
 
 /***/ },
 /* 279 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.default = {
-	  appName: "Apptitude",
-	  companyName: "Jared Inc.",
-	  slogan: "Unlock your potential.",
-	  projectTime: "~8 hours",
-	  jumbotronPath: ""
-	};
-
-/***/ },
-/* 280 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29217,7 +29200,7 @@
 	
 	var _reactRouter = __webpack_require__(214);
 	
-	var _constants = __webpack_require__(279);
+	var _constants = __webpack_require__(280);
 	
 	var _constants2 = _interopRequireDefault(_constants);
 	
@@ -29308,6 +29291,23 @@
 	}(_react2.default.Component);
 	
 	exports.default = _class;
+
+/***/ },
+/* 280 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  appName: "Apptitude",
+	  companyName: "Jared Inc.",
+	  slogan: "Unlock your potential.",
+	  projectTime: "~2 hours",
+	  jumbotronPath: ""
+	};
 
 /***/ }
 /******/ ]);

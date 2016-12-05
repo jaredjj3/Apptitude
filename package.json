@@ -1,5 +1,5 @@
 {
-  "name": "ghpages-react-boilerplate",
+  "name": "Apptitude",
   "version": "1.0.0",
   "description": "== README",
   "directories": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jaredjj3/ghpages-react-boilerplate"
+    "url": "git+https://github.com/jaredjj3/Apptitude"
   },
   "engines": {
     "node": "6.3.0",
@@ -23,9 +23,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jaredjj3/ghpages-react-boilerplate/issues"
+    "url": "https://github.com/jaredjj3/Apptitude/issues"
   },
-  "homepage": "https://github.com/jaredjj3/ghpages-react-boilerplate#readme",
+  "homepage": "https://github.com/jaredjj3/Apptitude#readme",
   "dependencies": {
     "babel-core": "^6.16.0",
     "babel-loader": "^6.2.5",

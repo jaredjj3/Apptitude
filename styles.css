@@ -58,6 +58,7 @@ input[type="submit"] {
 body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.4;
+  width: 100vh;
 }
 
 .logo {
