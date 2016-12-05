@@ -28,7 +28,7 @@ export default class extends React.Component {
               <p>This prototype was developed in only {$.projectTime}.</p>
             </li>
             <li className="feature-list-item">
-              <i className="material-icons">event_seat</i>
+              <i className="material-icons">computer</i>
               <h1>PASSION</h1>
               <p>The proof is in the projects. Let's connect.</p>
             </li>

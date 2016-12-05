@@ -29157,7 +29157,7 @@
 	              _react2.default.createElement(
 	                'i',
 	                { className: 'material-icons' },
-	                'event_seat'
+	                'computer'
 	              ),
 	              _react2.default.createElement(
 	                'h1',
