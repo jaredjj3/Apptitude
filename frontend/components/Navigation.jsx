@@ -5,16 +5,21 @@ import {
   withRouter 
 } from 'react-router';
 
-import constants from '../util/constants';
+import $ from '../util/constants';
 
 export default class extends React.Component {
   render () {
     return (
-      <nav>
-        <div className="nav-left"> 
+      <nav className="nav-container">
+        <div className="nav-left">
+          <div className="logo row-flex">
+            <Link to="home">{$.appName}</Link>
+          </div>
         </div>
-
-        <div>
+        <div className="nav-right">
+          <ul className="nav-links-list">
+            <li><Link to="home"><i className="material-icons">home</i></Link></li>
+          </ul>
         </div>
       </nav>  
     );

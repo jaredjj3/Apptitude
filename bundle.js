@@ -29052,10 +29052,6 @@
 	
 	var _reactRouter = __webpack_require__(214);
 	
-	var _constants = __webpack_require__(279);
-	
-	var _constants2 = _interopRequireDefault(_constants);
-	
 	var _Navigation = __webpack_require__(280);
 	
 	var _Navigation2 = _interopRequireDefault(_Navigation);
@@ -29063,6 +29059,10 @@
 	var _Footer = __webpack_require__(276);
 	
 	var _Footer2 = _interopRequireDefault(_Footer);
+	
+	var _constants = __webpack_require__(279);
+	
+	var _constants2 = _interopRequireDefault(_constants);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -29088,6 +29088,88 @@
 	        'div',
 	        { className: 'home-container' },
 	        _react2.default.createElement(_Navigation2.default, { location: this.props.location }),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'jumbotron col-flex' },
+	          _react2.default.createElement(
+	            'h1',
+	            null,
+	            _constants2.default.appName
+	          ),
+	          _react2.default.createElement(
+	            'h2',
+	            null,
+	            _constants2.default.slogan
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'features' },
+	          _react2.default.createElement(
+	            'ul',
+	            { className: 'row-flex feature-list' },
+	            _react2.default.createElement(
+	              'li',
+	              { className: 'feature-list-item' },
+	              _react2.default.createElement(
+	                'i',
+	                { className: 'material-icons' },
+	                'person'
+	              ),
+	              _react2.default.createElement(
+	                'h1',
+	                null,
+	                'PURPOSE'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                _constants2.default.appName,
+	                ' was made to show you how I can work for you.'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              { className: 'feature-list-item' },
+	              _react2.default.createElement(
+	                'i',
+	                { className: 'material-icons' },
+	                'show_chart'
+	              ),
+	              _react2.default.createElement(
+	                'h1',
+	                null,
+	                'POTENTIAL'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                'This prototype was developed in only ',
+	                _constants2.default.projectTime,
+	                '.'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              { className: 'feature-list-item' },
+	              _react2.default.createElement(
+	                'i',
+	                { className: 'material-icons' },
+	                'event_seat'
+	              ),
+	              _react2.default.createElement(
+	                'h1',
+	                null,
+	                'PASSION'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                'This is one of many projects. Let\'s connect.'
+	              )
+	            )
+	          )
+	        ),
 	        _react2.default.createElement(_Footer2.default, null)
 	      );
 	    }
@@ -29108,12 +29190,11 @@
 	  value: true
 	});
 	exports.default = {
-	  appName: "",
-	  companyName: "",
-	  slogan: "",
-	  projectTime: "",
-	  intro: "I’m an engineer. I thoroughly enjoy taking things apart, learning how they work, and rebuilding them to be better. In the past, I’ve done this with chemical processes. Today, I make user experiences that inspire and change peoples lives. ",
-	  projectDescription: ""
+	  appName: "Apptitude",
+	  companyName: "Jared Inc.",
+	  slogan: "Unlock your potential.",
+	  projectTime: "~8 hours",
+	  jumbotronPath: ""
 	};
 
 /***/ },
@@ -29160,9 +29241,41 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'nav',
-	        null,
-	        _react2.default.createElement('div', { className: 'nav-left' }),
-	        _react2.default.createElement('div', null)
+	        { className: 'nav-container' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'nav-left' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'logo row-flex' },
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: 'home' },
+	              _constants2.default.appName
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'nav-right' },
+	          _react2.default.createElement(
+	            'ul',
+	            { className: 'nav-links-list' },
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { to: 'home' },
+	                _react2.default.createElement(
+	                  'i',
+	                  { className: 'material-icons' },
+	                  'home'
+	                )
+	              )
+	            )
+	          )
+	        )
 	      );
 	    }
 	
