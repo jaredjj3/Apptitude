@@ -59,7 +59,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.4;
   min-width: 100vw;
-  width: 100vw;
+  width: 100%;
 }
 
 .logo {
