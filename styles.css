@@ -165,7 +165,6 @@ nav .active {
 
 .feature-list-item {
   padding: 20px;
-  overflow-y: scroll;
   flex-grow: 1;
   width: 33%;
   height: 200px;
